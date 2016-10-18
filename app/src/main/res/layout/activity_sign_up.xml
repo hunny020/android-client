@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.expenseezy.expenseezy.SignUpActivity">
+
+    <EditText
+        android:layout_width="@dimen/signUpUsernameEditTextWidth"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/signUpUsernameEditTextField"
+        android:layout_marginTop="@dimen/signUpUsernameMarginTop"
+        />
+    <EditText
+        android:layout_width="@dimen/singUpUserIdEditTextWidth"
+        android:layout_height="wrap_content"
+        android:hint="UserId"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/signUpUserIdEditTextField"
+        android:layout_marginTop="@dimen/signUpUserIdMarginTop"/>
+
+    <EditText
+        android:layout_width="@dimen/signUpPasswordEditTextWidth"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:id="@+id/signUpPasswordEditTextField"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/signUpPasswordMarginTop"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/signUpScreenSubmitMarginTop"
+        android:onClick="signUpSubmitButtonClicked"/>
+
+
+</LinearLayout>

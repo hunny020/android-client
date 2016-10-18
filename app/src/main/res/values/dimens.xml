@@ -4,4 +4,18 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="skipButtonWidth">120dp</dimen>
+    <dimen name="skipMarginBottom">20dp</dimen>
+    <dimen name="singUpMarginLeft">20dp</dimen>
+    <dimen name="loginUserIdEditTextWidth">300dp</dimen>
+    <dimen name="loginPasswordEditTextWidth">300dp</dimen>
+    <dimen name="loginUserIdEditTextMarginTop">30dp</dimen>
+    <dimen name="loginPasswordEditTextMarginTop">30dp</dimen>
+    <dimen name="signUpUserIdMarginTop">30dp</dimen>
+    <dimen name="signUpPasswordMarginTop">30dp</dimen>
+    <dimen name="singUpUserIdEditTextWidth">300dp</dimen>
+    <dimen name="signUpPasswordEditTextWidth">300dp</dimen>
+    <dimen name="signUpUsernameEditTextWidth">300dp</dimen>
+    <dimen name="signUpUsernameMarginTop">30dp</dimen>
+    <dimen name="signUpScreenSubmitMarginTop">30dp</dimen>
 </resources>

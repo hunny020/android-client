@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="@dimen/loginUserIdEditTextWidth"
+        android:layout_height="wrap_content"
+        android:hint="UserId"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginUserIdEditTextField"
+        android:layout_marginTop="@dimen/loginUserIdEditTextMarginTop"/>
+
+    <EditText
+        android:layout_width="@dimen/loginPasswordEditTextWidth"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginPasswordEditTextField"
+        android:layout_below="@id/loginUserIdEditTextField"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginPasswordEditTextMarginTop"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRelativeLayout"
+        android:layout_below="@+id/loginPasswordEditTextField"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/loginButton"
+            android:textSize="20dp"
+            android:onClick="loginButtonClicked"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:textSize="20sp"
+            android:id="@+id/signUpButton"
+            android:layout_toRightOf="@+id/loginButton"
+            android:layout_marginLeft="@dimen/singUpMarginLeft"
+            android:onClick="signUpButtonClicked"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
