@@ -28,11 +28,14 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.login_screen);
     }
 
+    /* Hits the server with the entered loginId and Password and returns a String (true) or (false)
+    * which is type casted to boolean.
+    * if(true) launches new activity otherwise show Toast*/
 
     public void loginButtonClicked(View v){
         userId = (EditText) findViewById(R.id.loginUserIdEditTextField);
         password = (EditText) findViewById(R.id.loginPasswordEditTextField);
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.0.2:5000")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.164:5000")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         APIService service = retrofit.create(APIService.class);
@@ -61,6 +64,15 @@ public class LoginActivity extends Activity {
 
             }
         });
+    }
+
+
+    /* Launch SingUp Activity when signUpButton gets clicked*/
+
+    public void signUpButtonClicked(View v){
+        Intent intent = new Intent();
+        intent.setClass(this,SignUpActivity.class);
+        startActivity(intent);
     }
 
 }

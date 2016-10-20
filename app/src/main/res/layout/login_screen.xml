@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/wooden_pattern_two"
+    android:gravity="center">
 
     <EditText
         android:layout_width="@dimen/loginUserIdEditTextWidth"
@@ -12,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_centerHorizontal="true"
         android:id="@+id/loginUserIdEditTextField"
-        android:layout_marginTop="@dimen/loginUserIdEditTextMarginTop"/>
+        />
 
     <EditText
         android:layout_width="@dimen/loginPasswordEditTextWidth"
@@ -29,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buttonRelativeLayout"
+        android:layout_marginTop="@dimen/loginButtonMaringTop"
         android:layout_below="@+id/loginPasswordEditTextField"
         android:layout_centerHorizontal="true">
 

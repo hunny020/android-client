@@ -30,11 +30,15 @@ public class SignUpActivity extends Activity {
         setContentView(R.layout.activity_sign_up);
     }
 
+    /* Hits the server with the entered username, loginId and password and returns a String (true) or (false)
+   * which is type casted to boolean.
+   * if(true) launches new activity otherwise show Toast*/
+
     public void signUpSubmitButtonClicked(View v){
         username = (EditText) findViewById(R.id.signUpUsernameEditTextField);
         userId = (EditText) findViewById(R.id.signUpUserIdEditTextField);
         password = (EditText) findViewById(R.id.signUpPasswordEditTextField);
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.0.2:5000")
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.164:5000")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         APIService service = retrofit.create(APIService.class);

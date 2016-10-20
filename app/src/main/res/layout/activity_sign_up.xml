@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/wooden_pattern_two"
+    android:gravity="center"
     tools:context="com.expenseezy.expenseezy.SignUpActivity">
 
     <EditText
@@ -14,7 +16,7 @@
         android:textSize="20sp"
         android:layout_gravity="center"
         android:id="@+id/signUpUsernameEditTextField"
-        android:layout_marginTop="@dimen/signUpUsernameMarginTop"
+
         />
     <EditText
         android:layout_width="@dimen/singUpUserIdEditTextWidth"

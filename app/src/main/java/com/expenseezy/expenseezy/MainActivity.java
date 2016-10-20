@@ -3,6 +3,7 @@ package com.expenseezy.expenseezy;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        NavigationDrawerFragment navigationDrawerFragment = (NavigationDrawerFragment)
+                getSupportFragmentManager().findFragmentById(R.id.navigation_fragment_drawer);
+        navigationDrawerFragment.setUp(R.id.navigation_fragment_drawer,(DrawerLayout)findViewById(R.id.drawer_layout),toolbar);
     }
 
 
