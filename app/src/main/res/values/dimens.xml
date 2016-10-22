@@ -18,4 +18,6 @@
     <dimen name="signUpUsernameEditTextWidth">300dp</dimen>
     <dimen name="signUpUsernameMarginTop">30dp</dimen>
     <dimen name="signUpScreenSubmitMarginTop">30dp</dimen>
+    <dimen name="loginButtonMaringTop">30dp</dimen>
+    <dimen name="navigation_drawer_width">280dp</dimen>
 </resources>
